@@ -3,71 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Today I Learned!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>TODAY I LEARED!</title>
   </head>
   <body>
-    <header>
-      <img src="./logo.png" alt="logo" />
-      <h1>Today I Learned</h1>
-      <button>Share a fact</button>
-    </header>
-    <main>
+    <div class="container">
+      <header class="logo">
+        <div>
+          <img src="./logo.png" alt="logo" />
+          <h1 class="coiny">TODAY I LEARED</h1>
+        </div>
+
+        <button class="coiny btn btn-large">Share a fact</button>
+      </header>
       <form action="">
-        <input type="text" />
-        <span>200</span>
-        <input type="text" />
-        <select>
+        <input
+          type="text"
+          placeholder="Share a fact with the world..."
+          class="sono first-input"
+        />
+        <span class="sono">200</span>
+        <input type="text" placeholder="Trustworthy source..." class="sono" />
+        <select class="sono">
           <option value="">Choose catergory</option>
           <option value="technology">technology</option>
           <option value="science">science</option>
         </select>
-        <button>Post</button>
+        <button class="coiny btn btn-large">Post</button>
       </form>
-      <aside>
-        <ul>
-          <li>
-            <button>All</button>
-          </li>
-          <li>
-            <button>technology</button>
-          </li>
-          <li>
-            <button>science</button>
-          </li>
-        </ul>
-      </aside>
-      <section>
-        <ul>
-          <li>
-            <p>
-              React is being developed by Meta (formerly facebook)<a
-                href="https://opensource.fb.com/"
-                >(Source)</a
-              ><span>#technology#</span>
-            </p>
-            <div>
-              <button>👍24</button>
-              <button>🤯9</button>
-              <button>⛔️4</button>
-            </div>
-          </li>
-          <li>
-            <p>
-              Millennial dads spend 3 times as much time with their kids than
-              their fathers spent with them. In 1982, 43% of fathers had never
-              changed a diaper. Today, that number is down to 3%<a
-                href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
-                >(Source)</a
-              ><span>#society#</span>
-            </p>
-            <div>
-              <button>👍24</button>
-              <button>🤯9</button>
-              <button>⛔️4</button>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </main>
+      <main class="main">
+        <aside>
+          <ul>
+            <li>
+              <button class="coiny btn btn-all-catergory">All</button>
+            </li>
+            <li>
+              <button class="coiny btn btn-catergory technology">
+                technology
+              </button>
+            </li>
+            <li>
+              <button class="coiny btn btn-catergory science">science</button>
+            </li>
+          </ul>
+        </aside>
+        <section>
+          <ul>
+            <li class="fact">
+              <p class="sono">
+                React is being developed by Meta (formerly facebook)<a
+                  href="https://opensource.fb.com/"
+                  class="source"
+                  >(Source)</a
+                >
+              </p>
+              <span class="coiny catergory technology">technology</span>
+              <div class="vote-button">
+                <button>👍 24</button>
+                <button>🤯 9</button>
+                <button>⛔️ 4</button>
+              </div>
+            </li>
+            <li class="fact">
+              <p class="sono">
+                Millennial dads spend 3 times as much time with their kids than
+                their fathers spent with them. In 1982, 43% of fathers had never
+                changed a diaper. Today, that number is down to 3%<a
+                  href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                  class="source"
+                  >(Source)</a
+                >
+              </p>
+              <span class="coiny catergory society">society</span>
+              <div class="vote-button">
+                <button>👍 24</button>
+                <button>🤯 9</button>
+                <button>⛔️ 4</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
