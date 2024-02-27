@@ -20,15 +20,16 @@
           <h1 class="coiny">TODAY I LEARED</h1>
         </div>
 
-        <button class="coiny btn btn-large">Share a fact</button>
+        <button class="coiny btn btn-large" id="tingle">Share a fact</button>
       </header>
-      <form action="">
+      <form id="tingle-form" action="" autocomplete="off" style="display: none">
         <input
           type="text"
           placeholder="Share a fact with the world..."
           class="sono first-input"
+          id="share-fact"
         />
-        <span class="sono">200</span>
+        <span id="num" class="sono">200</span>
         <input type="text" placeholder="Trustworthy source..." class="sono" />
         <select class="sono">
           <option value="">Choose catergory</option>
@@ -38,7 +39,7 @@
         <button class="coiny btn btn-large">Post</button>
       </form>
       <main class="main">
-        <aside>
+        <aside id="catergory">
           <ul>
             <li>
               <button class="coiny btn btn-all-catergory">All</button>
@@ -54,11 +55,12 @@
           </ul>
         </aside>
         <section>
-          <ul>
+          <ul id="fact-list">
             <li class="fact">
               <p class="sono">
                 React is being developed by Meta (formerly facebook)<a
                   href="https://opensource.fb.com/"
+                  target="_blank"
                   class="source"
                   >(Source)</a
                 >
@@ -76,6 +78,7 @@
                 their fathers spent with them. In 1982, 43% of fathers had never
                 changed a diaper. Today, that number is down to 3%<a
                   href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
+                  target="_blank"
                   class="source"
                   >(Source)</a
                 >
@@ -91,5 +94,6 @@
         </section>
       </main>
     </div>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>

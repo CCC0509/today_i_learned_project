@@ -28,6 +28,7 @@
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 3rem;
+  margin-top: 2.5rem;
 }
 .fact {
   font-size: 1.2rem;
@@ -140,13 +141,14 @@
 .first-input {
   flex: 1 0;
 }
+
 body {
   background-color: #292524;
   color: #fafaf9;
   form {
     background-color: #44403c;
     border-radius: 15px;
-    margin: 2.5rem 0;
+    margin-top: 2.5rem;
     padding: 0 1.8rem;
     display: flex;
     gap: 1rem;
@@ -154,7 +156,7 @@ body {
     align-items: center;
     input,
     select {
-      color: #a8a29e;
+      color: inherit;
       font-size: 1rem;
       background-color: #78716c;
       border: none;
@@ -164,7 +166,8 @@ body {
     }
   }
 }
-ul {
+
+li {
   list-style: none;
 }
 .logo div {
